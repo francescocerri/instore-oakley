@@ -1,0 +1,35 @@
+.footer {
+  //height: 5rem;
+  background-color: #000000;
+  padding: .5rem 2rem;
+  color: #ffffff;
+  font-weight: bold;
+
+  .footer-right {
+    .footer-signup {
+      justify-content: flex-end;
+      .form-container {
+        display: flex;
+        .search-input {
+          width: 10rem;
+        }
+        .search-btn {
+          background-color: #ffffff;
+          color: #000000;
+          margin-left: .5rem;
+          font-size: .9rem;
+          padding: 0.4rem 0.75rem;
+        }
+      }
+    }
+    .social-links {
+      padding-top: .25rem;
+      justify-content: flex-end;
+      .link {
+        padding: 0 .25rem;
+        color: #ffffff;
+        text-decoration: underline;
+      }
+    }
+  }
+}
