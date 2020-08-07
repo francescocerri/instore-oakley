@@ -21,7 +21,10 @@ function App() {
                 setItems(items);
                 setOriginalItems(items);
             })
-            .catch((err)=> console.error(err))
+            .catch((err)=> {
+                setIsLoaded(true);
+                console.error(err)
+            })
     }, []);
 
     /**
@@ -46,7 +49,7 @@ function App() {
           {!isLoaded && <Loader />}
           <Row className="box-container">
               { items && items.map((item) =>
-                <Box key={items.name} {...item} />
+                <Box key={items.UPC} {...item} />
               )}
           </Row>
       </div>

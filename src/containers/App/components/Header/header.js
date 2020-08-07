@@ -7,6 +7,7 @@ const menus = [
     { title: 'EYEGLASSES', key: 2 },
     { title: 'LENSES', key: 3 },
 ];
+
 function Header(props) {
     const { filterSelected } = props;
 
@@ -27,7 +28,7 @@ function Header(props) {
     return (
         <div className="header-container">
             <div className="header">
-                <img src="https://via.placeholder.com/100x50.png" alt="logo" className="logo"/>
+                <img src="https://via.placeholder.com/100x50.png" alt="primary" className="logo"/>
                 <div className="menu-container d-none d-md-block">
                     <div className="menu-info">
                         { menus.map((menu) =>

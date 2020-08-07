@@ -1,0 +1,70 @@
+.container {
+  padding-top: .5rem;
+  .slider {
+    box-sizing: border-box;
+    .slider-list {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      transform: translateZ(0);
+      .slider-track {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+        .single-slider {
+          background-image: url("https://via.placeholder.com/80x50.png");
+          background-repeat: no-repeat, repeat;
+          background-position: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          float: left;
+          height: 50px;
+          width: 80px;
+          margin: 0 .25rem;
+        }
+      }
+    }
+    .arrow {
+      border: solid #9E9E9E;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      &.right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+      &.left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+    }
+    .container-arrow-next, .container-arrow-prev {
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      transform: translateY(-50%);
+      cursor: pointer;
+      border: none;
+      &[disabled] {
+        cursor: not-allowed;
+      }
+    }
+    .container-arrow-next {
+      right: -1rem;
+    }
+    .container-arrow-prev {
+      left: -1rem;
+    }
+  }
+}

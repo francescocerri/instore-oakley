@@ -1,10 +1,8 @@
 .footer {
-  //height: 5rem;
   background-color: #000000;
   padding: .5rem 2rem;
   color: #ffffff;
   font-weight: bold;
-
   .footer-right {
     .footer-signup {
       justify-content: flex-end;
@@ -29,6 +27,7 @@
         padding: 0 .25rem;
         color: #ffffff;
         text-decoration: underline;
+        text-transform: lowercase;
       }
     }
   }

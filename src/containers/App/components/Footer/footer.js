@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
 import { Row, Col, Input, Button, Form } from 'reactstrap';
 import { FACEBOOK_LINK, TWITTER_LINK } from '../../../../constants/link';
+
 function Footer() {
     return (
         <div className="footer">
